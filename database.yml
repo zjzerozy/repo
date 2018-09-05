@@ -20,13 +20,14 @@ spring:
       time-between-eviction-runs-millis: 60000
       min-evictable-idle-time-millis: 300000
       filters: stat,wall,log4j
-      filter: 
+      filter:
         stat:
           log-slow-sql: true
           slow-sql-millis: 2000
       web-stat-filter:
         enable: true
-      stat-view-servlet: 
+      stat-view-servlet:
         enabled: true
+        #druid控制台的用户名和密码
         login-username: druid_admin
         login-password: 123456
